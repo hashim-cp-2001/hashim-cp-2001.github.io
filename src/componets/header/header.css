@@ -1,0 +1,89 @@
+header{
+    height: 100vh;
+    padding-top: 2.5rem;
+    overflow: hidden;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*========main page alingnment====*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*========social alingnment====*/
+
+.header__social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__social::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-in:not(:empty) {
+    opacity: 1;
+  }
+  
+/*=====pic====*/
+.me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    left: calc(49% - 8.5rem);
+    margin-top: 1.2rem;
+    border-radius: 3rem 3rem 0 0;
+    overflow: hidden;
+    padding: 3rem 4rem 4rem 4rem;
+}
+
+/*=====scroll====*/
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/*===Media Devices==*/
+
+
+@media screen and (max-width:1024px) {
+    header{
+        height: 100vh;
+        
+        
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        height: 110vh;
+    }
+    .header__social,.scroll__down{
+        display: none;
+    }
+}
