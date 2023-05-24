@@ -34,7 +34,7 @@ const About = () => {
           <p>
           I Am Hashim Sharaf CP, and I am a dedicated student pursuing Computer Science at Govt Engineering College Idukki. With a passion for leadership, I thrive in roles where I can inspire and motivate others. Programming is a domain where I excel, and I am constantly honing my skills to stay updated with the latest technologies. I am eager to contribute to the field of technology and make a positive impact in the world.
           </p>
-          <a href='#Contact' className='btn btn-primary'>Let's Talk</a>
+          
         </div>
       </div>
     </section>
