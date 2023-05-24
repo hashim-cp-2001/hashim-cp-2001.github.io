@@ -40,7 +40,7 @@ const Contact = () => {
             <CgInstagram className='contact__options-icon' />
             <h4>Instagram</h4>
             <h5>hash.im___</h5>
-            <a href="https://www.instagram.com/hash.im___" target="_blank" rel="noopener noreferrer">Send a message</a>
+            <a href="https://www.instagram.com/hash.im____" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
           <article className='contact__option'>
             <BsWhatsapp className='contact__options-icon' />
