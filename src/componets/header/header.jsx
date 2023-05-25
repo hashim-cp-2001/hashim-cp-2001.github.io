@@ -10,7 +10,7 @@ const Header = () => {
   const [role, setRole] = useState('');
 
   useEffect(() => {
-    const dynamicStart = 'Hello i am';
+    const dynamicStart = 'Hello I Am';
     const dynamicName = 'Hashim Sharaf CP';
     const dynamicRole = 'Fullstack Developer';
 
