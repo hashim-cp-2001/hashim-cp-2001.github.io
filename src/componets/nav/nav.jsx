@@ -26,9 +26,9 @@ const Nav = () => {
 
       if (scrollPosition < windowHeight * 0.5) {
         setActiveNav('#');
-      } else if (scrollPosition >= windowHeight * 0.5 && scrollPosition < windowHeight * 1.5) {
+      } else if (scrollPosition >= windowHeight * 0.5 && scrollPosition < windowHeight * 2.1) {
         setActiveNav('#about');
-      } else if (scrollPosition >= windowHeight * 1.5 && scrollPosition < windowHeight * 2.5) {
+      } else if (scrollPosition >= windowHeight * 2.1 && scrollPosition < windowHeight * 3.5) {
         setActiveNav('#experince');
       } else if (scrollPosition >= windowHeight * 2.5) {
         setActiveNav('#contact');
