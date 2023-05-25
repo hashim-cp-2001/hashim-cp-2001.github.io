@@ -4,7 +4,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 import { BsBookmark } from 'react-icons/bs';
 import { RiServiceFill } from 'react-icons/ri';
-import { Link } from 'react-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
 import { MdOutlinePermContactCalendar } from 'react-icons/md';
 
 const Nav = () => {
@@ -20,6 +20,19 @@ const Nav = () => {
       timer = setTimeout(() => {
         setIsVisible(false);
       }, 2000);
+
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      if (scrollPosition < windowHeight * 0.5) {
+        setActiveNav('#');
+      } else if (scrollPosition >= windowHeight * 0.5 && scrollPosition < windowHeight * 1.5) {
+        setActiveNav('#about');
+      } else if (scrollPosition >= windowHeight * 1.5 && scrollPosition < windowHeight * 2.5) {
+        setActiveNav('#experince');
+      } else if (scrollPosition >= windowHeight * 2.5) {
+        setActiveNav('#contact');
+      }
     };
 
     window.addEventListener('scroll', handleMovement);
