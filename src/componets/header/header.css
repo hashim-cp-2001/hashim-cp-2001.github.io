@@ -35,6 +35,7 @@ header{
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
+    
 }
 
 .fade-in {
@@ -84,7 +85,24 @@ header{
     header{
         height: 100vh;
     }
-    .header__social,.scroll__down{
+    .scroll__down{
         display: none;
+    }
+    .header__social{
+      
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.8rem;
+        position: absolute;
+        left: 11.5rem;
+        bottom: 0rem;
+        
+        
+    }
+    .header__social::after{
+        content: none;
+        
+        
     }
 }
